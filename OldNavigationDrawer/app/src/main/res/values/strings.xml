@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Old Navigation Drawer</string>
+    <string name="navigation_drawer_open">open navigation drawer</string>
+    <string name="navigation_drawer_close">close navigation drawer</string>
+    <string name="nav_header">Nav Header</string>
+    <string name="string_activity_title">Activity</string>
+    <string name="string_service_title">Service</string>
+    <string name="string_broadcast_title">Broadcast</string>
+    <string name="string_content_provider_title">Content Provider</string>
+    <string name="string_explicit_intent">Explicit Intent</string>
+    <string name="string_implicit_intent">Implicit Intent</string>
+    <string name="string_activity_life_circle">Activity life-circle</string>
+    <string name="string_manifest_declared_receiver">Manifest-declared Receiver</string>
+    <string name="string_context_registered_receiver">Context-registered Receiver</string>
+    <string name="this_is_an_explicit_intent">This is an Explicit Intent</string>
+    <string name="this_is_second_activity">This is second activity</string>
+    <string name="switch_view">Switch View</string>
+    <string name="switch_back">Switch back</string>
+    <string name="started_service">Started service</string>
+    <string name="bound_service">Bound service</string>
+    <string name="start_service">Start Service</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="list_all_words">List All Words</string>
+    <string name="list_first_word">List First Word</string>
+    <string name="response">response</string>
+    <string name="content_provider">Content Provider</string>
+    <string-array name="words">
+        <item>Android</item>
+        <item>Activity</item>
+        <item>ContentProvider</item>
+        <item>ContentResolver</item>
+    </string-array>
+</resources>
