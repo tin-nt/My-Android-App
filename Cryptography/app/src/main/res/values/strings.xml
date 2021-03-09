@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cryptography</string>
+    <string name="enter_text">Enter text</string>
+    <string name="my_input_for_testing">My input for testing</string>
+    <string name="my_input">My Input</string>
+    <string name="encrypt">Encrypt</string>
+    <string name="textview">TextView</string>
+    <string name="encrypted_data">Encrypted Data</string>
+    <string name="decrypt">Decrypt</string>
+</resources>
