@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Key Store</string>
+    <string name="input_data">Input data</string>
+    <string name="encrypted_data">Encrypted Data</string>
+    <string name="encrypt">Encrypt</string>
+    <string name="decrypt">Decrypt</string>
+    <string name="decrypted_data">Decrypted Data</string>
+</resources>
