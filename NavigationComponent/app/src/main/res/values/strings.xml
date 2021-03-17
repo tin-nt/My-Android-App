@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NavigationComponent</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="string_fragment_home">Home Fragment</string>
+    <string name="string_fragment_toan">Toan Fragment</string>
+    <string name="string_fragment_ly">Ly Fragment</string>
+    <string name="string_fragment_hoa">Hoa Fragment</string>
+    <string name="string_fragment_anh">Anh Fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

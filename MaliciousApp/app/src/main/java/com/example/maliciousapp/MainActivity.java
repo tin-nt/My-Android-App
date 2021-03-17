@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Intent intent = new Intent();
-        intent.setComponent(new ComponentName("com.example.oldnavigationdrawer","com.example.oldnavigationdrawer.activity.WelcomeActivity"));
+        intent.setComponent(new ComponentName("com.example.oldnavigationdrawer", "com.example.oldnavigationdrawer.activity.WelcomeActivity"));
         startActivity(intent);
     }
 }

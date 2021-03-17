@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navigationcomponent.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_toanFragment"
+            app:destination="@id/toanFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_hoaFragment"
+            app:destination="@id/hoaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_lyFragment"
+            app:destination="@id/lyFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_anhFragment"
+            app:destination="@id/anhFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/lyFragment"
+        android:name="com.example.navigationcomponent.fragment.LyFragment"
+        android:label="fragment_toan"
+        tools:layout="@layout/fragment_toan" />
+    <fragment
+        android:id="@+id/toanFragment"
+        android:name="com.example.navigationcomponent.fragment.ToanFragment"
+        android:label="fragment_toan"
+        tools:layout="@layout/fragment_toan" />
+    <fragment
+        android:id="@+id/hoaFragment"
+        android:name="com.example.navigationcomponent.fragment.HoaFragment"
+        android:label="fragment_toan"
+        tools:layout="@layout/fragment_toan" />
+    <fragment
+        android:id="@+id/anhFragment"
+        android:name="com.example.navigationcomponent.fragment.AnhFragment"
+        android:label="fragment_toan"
+        tools:layout="@layout/fragment_toan" />
+</navigation>

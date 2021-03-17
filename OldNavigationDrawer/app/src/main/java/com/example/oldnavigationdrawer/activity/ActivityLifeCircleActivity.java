@@ -28,7 +28,7 @@ public class ActivityLifeCircleActivity extends AppCompatActivity {
 
     }
 
-    @Override
+    @Override   
     protected void onResume() {
         super.onResume();
         Log.d("AAA", "First Activity || onResume()");

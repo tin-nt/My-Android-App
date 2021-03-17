@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.oldnavigationdrawer">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,30 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OldNavigationDrawer">
         <activity
-            android:name=".activity.ContentProviderActivity"
-            android:exported="true"/>
-        <activity
-            android:name=".activity.BoundServiceActivity"
-            android:exported="true" />
-        <activity
-            android:name=".activity.StartedServiceActivity"
-            android:exported="true" />
-        <activity
-            android:name=".activity.SecondActivity"
-            android:exported="true" />
-        <activity
-            android:name=".activity.ActivityLifeCircleActivity"
-            android:exported="true" />
-        <activity
-            android:name=".activity.ExplicitIntentActivity"
-            android:exported="true">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            android:name=".activity.IntentWelcomeActivity">
+            <intent-filter>
+                <action android:name="com.example.oldnavigationdrawer.activity.IntentWelcomeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </activity>
+<!--        vuln exported=true-->
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:exported="true" />
+        <activity android:name=".activity.IntentLoginTestCaseActivity"/>
+        <activity android:name=".activity.SimpleLoginTestCaseActivity" />
+        <activity android:name=".activity.ContentProviderActivity" />
+        <activity android:name=".activity.BoundServiceActivity" />
+        <activity android:name=".activity.StartedServiceActivity" />
+        <activity android:name=".activity.SecondActivity" />
+        <activity android:name=".activity.ActivityLifeCircleActivity" />
+        <activity android:name=".activity.ExplicitIntentActivity" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
             android:theme="@style/Theme.OldNavigationDrawer.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,15 +38,18 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".receiver.NetworkBroadcastReceiver">
+        <receiver android:name=".receiver.TestBroadcastReceiver">
             <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
             </intent-filter>
         </receiver>
-        
+
         <provider
-            android:authorities="com.example.oldnavigationdrawer.provider"
-            android:name=".contentprovider.MiniContentProvider"/>
+            android:name=".contentprovider.MiniContentProvider"
+            android:authorities="com.example.oldnavigationdrawer.provider" />
+
         <service android:name=".service.BoundService" />
         <service android:name=".service.StartedService" />
     </application>

@@ -24,6 +24,16 @@
     <string name="list_first_word">List First Word</string>
     <string name="response">response</string>
     <string name="content_provider">Content Provider</string>
+    <string name="security_title">Security</string>
+    <string name="security_login_test_case">Login Test Case</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="login_switch_activity">Login</string>
+    <string name="logged_as_admin">Logged as Admin</string>
+    <string name="string_intent_login_test_case">Intent Login Test Case</string>
+    <string name="intent_login_username">Username</string>
+    <string name="intent_login_password">Password</string>
+    <string name="intent_test_case_login">Login</string>
     <string-array name="words">
         <item>Android</item>
         <item>Activity</item>

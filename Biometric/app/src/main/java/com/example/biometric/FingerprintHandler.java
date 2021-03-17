@@ -26,6 +26,7 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
                 PackageManager.PERMISSION_GRANTED) {
             return;
         }
+        // authenticate
         manager.authenticate(cryptoObject, cancellationSignal, 0, this, null);
     }
     @Override

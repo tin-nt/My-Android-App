@@ -14,6 +14,7 @@ import com.example.oldnavigationdrawer.fragment.ActivityFragment;
 import com.example.oldnavigationdrawer.fragment.BroadcastFragment;
 import com.example.oldnavigationdrawer.fragment.ContentProviderFragment;
 import com.example.oldnavigationdrawer.fragment.ServiceFragment;
+import com.example.oldnavigationdrawer.fragment.SecurityFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -76,6 +77,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ContentProviderFragment()).commit();
                 break;
+            case R.id.nav_security_part:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new SecurityFragment()).commit();
 
         }
         drawerLayout.closeDrawer(GravityCompat.START);
